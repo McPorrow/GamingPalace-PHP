@@ -6,7 +6,7 @@ if($_REQUEST[password]==$_REQUEST[password2]){
   mysqli_close($con);
   //echo "Se ha creado el alumno";
   echo '<script language="javascript">alert("Se ha creado el usuario")</script>';
-  header ("location: index.html");
+  header ("location: index.php");
 
 }else {
   echo '<script language="javascript">alert("Las contraseñas no coinciden")</script>';

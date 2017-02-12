@@ -8,6 +8,10 @@ http://www.bootstrapzero.com
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
 
+.spoiler{
+     display:none;
+}
+
 html,
 body {
     width: 100%;
@@ -232,9 +236,7 @@ header {
     text-align: center;
     color: #fff;
     width: 100%;
-    background-color: #c9c9c9;
-    background-image: url('https://splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-Slate-Stone-Xeromatic-1440x953.jpg');
-    background-position: center;
+    background-color: rgb(35, 29, 55);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -263,11 +265,11 @@ header .header-content .inner p {
 
 #video-background {
   position: absolute;
-  right: 0; 
+  right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
-  width: auto; 
+  width: auto;
   height: auto;
   z-index: 1;
 }
@@ -284,7 +286,7 @@ footer {
     .icon-lg {
         font-size: 80px;
     }
-    
+
     header {
         min-height: 100%;
     }
@@ -314,7 +316,7 @@ footer {
         max-width: 80%;
         font-size: 18px;
     }
-    
+
     section {
         min-height: 600px;
         padding: 100px 0;
