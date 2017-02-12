@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gaming Palace</title>
+  <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Codeply">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/animate.min.css" />
+  <link rel="stylesheet" href="./css/ionicons.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script >
+  function ComprobarClave(){
+    clave1 = document.registro.password.value
+    clave2 = document.registro.password2.value
+
+    if (clave1 == clave2){
+      alert("Se ha creado el usuario")
+    }else{
+      alert("Las contraseñas no coinciden. Vuelve a introducir los datos.")
+      
+    }
+  }
+  </script>
+</head>
+<body>
+  <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#first"><i class="fa fa-gamepad fa-lg" aria-hidden="true"></i> Gaming Palace </a>
+      </div>
+      <div class="navbar-collapse collapse" id="bs-navbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="page-scroll" href="./index.html">HOME</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="./index.html#two">JUEGOS</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#three">TRAILERS</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#last">CONTACTO</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="page-scroll" data-toggle="modal" title="Sign in" href="#aboutModal">Registrarse</a>
+          </li>
+          <li>
+            <a class="page-scroll" data-toggle="modal" title="Log in" href="./login.html">Iniciar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="first">
+    <div class="header-content">
+      <div class="inner">
+        <h1 class="cursive">Registro  <h1>
+          <hr>
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <form action="registro.php" name="registro" class="register-form row">
+              <div>
+                <input type="text" class="form-control" name="user" placeholder="Usuario">
+              </br>
+            </div>
+            <div>
+              <input type="password" class="form-control" name="password" placeholder="Contraseña">
+              <br>
+              <input type="password" class="form-control" name="password2" placeholder="Vuelve a introducir la contraseña">
+              <br>
+            </div>
+            <div>
+              <input type="text" class="form-control" name="mail" placeholder="eMail">
+              <br>
+            </div>
+            <button type="submit" onclick="ComprobarClave()" class="btn btn-primary btn-lg">Enviar</button>
+          </div>
+        </div>
+      </div>
+      <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="./img/wallpaper.jpg" id="video-background">
+        <source src="" type="./video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+      </header>
+      <footer id="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 column">
+              <h4>Information</h4>
+              <ul class="list-unstyled">
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Benefits</a></li>
+                <li><a href="">Developers</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 column">
+              <h4>About</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 column">
+              <h4>Stay Posted</h4>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-right">
+              <h4>Follow</h4>
+              <ul class="list-inline">
+                <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
+                <li><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>
+                <li><a rel="nofollow" href="" title="Dribble"><i class="icon-lg ion-social-dribbble-outline"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <br/>
+          <span class="pull-right text-muted small">Gaming Palace by Erik Arroyo </a> ©2016 </span>
+        </div>
+      </footer>
+
+
+      <!--scripts loaded here -->
+      <script src="./js/jquery.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/jquery.easing.min.js"></script>
+      <script src="./js/wow.js"></script>
+      <script src="./js/scripts.js"></script>
+    </body>
+    </html>
